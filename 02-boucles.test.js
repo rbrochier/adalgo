@@ -24,15 +24,12 @@ describe("afficherPairs", () => {
 });
 
  
-  
-
-
-
 
 // Pattern 2 : boucle + accumulateur numérique → .toBe() sur un nombre.
 // On te montre somme en entier.
 describe("somme", () => {
   it("retourne 15 pour n=5", () => {
+  
     expect(somme(5)).toBe(15)
   })
   it("retourne 1 pour n=1", () => {
