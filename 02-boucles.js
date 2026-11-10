@@ -8,8 +8,11 @@
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
 export const compterJusqua = (n) => {
-  // à compléter
+  for (let i = 0; i<=n; i++ ){
+    console.log(i)
+  }
 }
+
 
 /**
  * Affiche uniquement les nombres pairs de 1 à n dans la console.
@@ -18,8 +21,12 @@ export const compterJusqua = (n) => {
  * @example afficherPairs(8) → affiche 2, 4, 6, 8
  */
 export const afficherPairs = (n) => {
-  // à compléter
-}
+ for (let i=1; i<=n; i++){
+  if (n%2 === 0){
+    console.log(i)
+  }
+ }};
+
 
 /**
  * Retourne la somme de tous les entiers de 1 à n.
@@ -124,3 +131,5 @@ export const estDivisibleParTous = (n, diviseurs) => {
 export const fibonacci = (n) => {
   // à compléter
 }
+
+

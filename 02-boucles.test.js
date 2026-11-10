@@ -3,16 +3,31 @@ import { compterJusqua, afficherPairs, somme, produit, compterPairs, table, mult
 // Pattern 1 : boucle + console.log (pas de valeur de retour à tester)
 // On vérifie juste que la fonction s'exécute sans erreur.
 describe("compterJusqua", () => {
+
+
   it("s'exécute sans erreur pour n=5", () => {
-    expect(() => compterJusqua(5)).not.toThrow()
-  })
-})
+    const n = 5;
+    const comptage = () => compterJusqua(n);
+    expect(comptage).not.toThrow();
+  });
+});
 
 // Même pattern que compterJusqua — à toi.
 // Cas à couvrir : s'exécute sans erreur pour n=8, s'exécute sans erreur pour n=0.
 describe("afficherPairs", () => {
-  // à compléter
-})
+
+  it("s'exécute sans erreur pour n=8", () => {
+    const n = 8;
+    const affichage = () => afficherPairs(n);
+    expect(affichage).not.toThrow();
+  })
+});
+
+ 
+  
+
+
+
 
 // Pattern 2 : boucle + accumulateur numérique → .toBe() sur un nombre.
 // On te montre somme en entier.
