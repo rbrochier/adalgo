@@ -1,8 +1,6 @@
-  // Chapitre 02 — Boucles
+// Chapitre 02 — Boucles
 // Notions : for, while, accumulation, comptage, construction de tableau
 // Exos 1 à 6 obligatoires — Exos 7 à 9 facultatifs
-
-
 
 /**
  * Affiche les nombres de 1 à n dans la console.
@@ -10,10 +8,10 @@
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
 export const compterJusqua = (n) => {
-  for (let i = 0; i<=n; i++ ){
-    console.log(i)
+  for (let i = 0; i <= n; i++) {
+    console.log(i);
   }
-}
+};
 /**
  * Affiche uniquement les nombres pairs de 1 à n dans la console.
  * Même pattern que compterJusqua, avec une condition en plus.
@@ -21,11 +19,12 @@ export const compterJusqua = (n) => {
  * @example afficherPairs(8) → affiche 2, 4, 6, 8
  */
 export const afficherPairs = (n) => {
- for (let i=1; i<=n; i++){
-  if (n%2 === 0){
-    console.log(i)
+  for (let i = 1; i <= n; i++) {
+    if (n % 2 === 0) {
+      console.log(i);
+    }
   }
- }};
+};
 /**
  * Retourne la somme de tous les entiers de 1 à n.
  * Pattern : boucle + accumulateur numérique.
@@ -34,11 +33,11 @@ export const afficherPairs = (n) => {
  * @example somme(5) → 15  (1+2+3+4+5)
  */
 export const somme = (n) => {
-  let total =0;
-  for (let i=0; i<=n; i++ ){
+  let total = 0;
+  for (let i = 0; i <= n; i++) {
     total = total + i;
   }
-return total;
+  return total;
 };
 
 /**
@@ -51,12 +50,11 @@ return total;
  */
 export const produit = (n) => {
   let total = 1;
-  for (let i =1; i <= n; i++){
+  for (let i = 1; i <= n; i++) {
     total = total * i;
   }
   return total;
-
-}
+};
 
 /**
  * Retourne le nombre d'entiers pairs entre 1 et n inclus.
@@ -67,12 +65,14 @@ export const produit = (n) => {
  * @example compterPairs(7)  → 3
  */
 export const compterPairs = (n) => {
-  
-
-}
-
-
-  
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+     total++;
+    } 
+  }
+  return total;
+};
 
 /**
  * Retourne un tableau contenant les n premiers multiples de n.
@@ -84,7 +84,7 @@ export const compterPairs = (n) => {
  */
 export const table = (n) => {
   // à compléter
-}
+};
 
 /**
  * Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite.
@@ -97,7 +97,7 @@ export const table = (n) => {
  */
 export const multiplesJusqua = (n, limite) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -111,7 +111,7 @@ export const multiplesJusqua = (n, limite) => {
  */
 export const puissance = (base, exposant) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -126,7 +126,7 @@ export const puissance = (base, exposant) => {
  */
 export const estDivisibleParTous = (n, diviseurs) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -141,6 +141,4 @@ export const estDivisibleParTous = (n, diviseurs) => {
  */
 export const fibonacci = (n) => {
   // à compléter
-}
-
-
+};

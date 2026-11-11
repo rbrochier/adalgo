@@ -95,8 +95,38 @@ describe("produit", () => {
 // Même pattern que somme — à toi.
 // Cas à couvrir : compterPairs(10) → 5, compterPairs(7) → 3, compterPairs(1) → 0.
 describe("compterPairs", () => {
-  // à compléter
+
+  it("retourne 5 pour n=10", () => {
+    /// Arrange 
+    const n = 10;
+    const attendu = 5;
+    /// Act
+    const resultat = compterPairs(n);
+    /// Assert
+    expect(resultat).toBe(attendu)
+  })
+  it("retourne 3 pour n=7", () => {
+    /// Arrange
+    const n = 7;
+    const attendu = 3;
+    /// Act
+    const resultat = compterPairs(n);
+    /// Assert
+    expect(resultat).toBe(attendu)
+  })
+  
+  it("retourne 0 pour n=1", () => {
+ /// Arrange
+    const n = 1;
+    const attendu = 0;
+    /// Act
+    const resultat = compterPairs(n);
+    /// Assert
+    expect(resultat).toBe(attendu)
+  })
+
 })
+
 
 // Pattern 3 : boucle + construction de tableau → .toEqual() sur un tableau.
 // On te montre table en entier — c'est le premier .toEqual().

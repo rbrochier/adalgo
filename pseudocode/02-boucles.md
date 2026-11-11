@@ -38,6 +38,7 @@ total : ENTIER
 
 DEBUT
   LIRE n
+  i <- 1
   total <- 0
     TANT QUE i <= n FAIRE
     total <- total + i
@@ -63,5 +64,23 @@ DEBUT
   AFFICHER TOTAL
 FIN
 
+ * Retourne le nombre d'entiers pairs entre 1 et n inclus.
 
+ VARIABLES
 
+i : ENTIER
+n : ENTIER
+total : ENTIER
+
+DEBUT
+  LIRE n
+  i ← 1
+  total ← 0
+  TANT QUE i <= n FAIRE
+      SI i MOD 2 = 0 ALORS
+          total ← total + i
+      FIN SI
+      i ← i + 1
+  FIN TANT QUE
+  AFFICHER total
+FIN
