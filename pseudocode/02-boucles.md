@@ -84,3 +84,31 @@ DEBUT
   FIN TANT QUE
   AFFICHER total
 FIN
+
+
+ * Retourne un tableau contenant les n premiers multiples de n. 
+
+VARIABLES
+i : ENTIER
+n : ENTIER
+multiples :[]
+
+
+DEBUT
+LIRE n
+i <- 1
+multiples <- []
+
+TANT QUE i <= n FAIRE
+AJOUTER n * i à multiples
+i <- i + 1
+FIN TANT QUE
+AFFICHER multiples
+
+FIN
+
+
+
+
+
+
