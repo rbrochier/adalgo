@@ -13,8 +13,10 @@ FIN
 
  * Affiche uniquement les nombres pairs de 1 à n dans la console.
 VARIABLES
-  n : ENTIER
+
   i : ENTIER
+  n : ENTIER
+  
 DEBUT
   LIRE n
   i ← 1
@@ -28,15 +30,38 @@ FIN
 
 * Retourne la somme de tous les entiers de 1 à n.
 VARIABLES
+
+i : ENTIER
 n : ENTIER
-somme : ENTIER
-compteur : ENTIER
+total : ENTIER
 
 
 DEBUT
-somme <- 0
-TANT QUE compteur <= n FAIRE
-somme <- somme + n
-FIN TANT QUE
+  LIRE n
+  total <- 0
+    TANT QUE i <= n FAIRE
+    total <- total + i
+    FIN TANT QUE
 FIN
+
+* Retourne le produit de tous les entiers de 1 à n (factorielle).
+
+VARIABLES
+
+i : ENTIER
+n : ENTIER
+total : ENTIER
+
+DEBUT
+  LIRE n
+  total <- 1
+  i ← 1
+    TANT QUE i <= n FAIRE
+    total <- total x i
+    i ← i + 1
+    FIN TANT QUE
+  AFFICHER TOTAL
+FIN
+
+
 

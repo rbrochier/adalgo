@@ -1,4 +1,4 @@
-// Chapitre 02 — Boucles
+  // Chapitre 02 — Boucles
 // Notions : for, while, accumulation, comptage, construction de tableau
 // Exos 1 à 6 obligatoires — Exos 7 à 9 facultatifs
 
@@ -50,8 +50,12 @@ return total;
  * @example produit(0) → 1
  */
 export const produit = (n) => {
+  let total = 1;
+  for (let i =1; i <= n; i++){
+    total = total * i;
+  }
+  return total;
 
-  // à compléter
 }
 
 /**
@@ -63,8 +67,12 @@ export const produit = (n) => {
  * @example compterPairs(7)  → 3
  */
 export const compterPairs = (n) => {
-  // à compléter
+  
+
 }
+
+
+  
 
 /**
  * Retourne un tableau contenant les n premiers multiples de n.
