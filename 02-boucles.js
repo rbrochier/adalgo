@@ -91,10 +91,6 @@ export const table = (n) => {
   return multiples;
 };
 
-
-
-
-
 /**
  * Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite.
  * Même pattern que table, avec une limite différente.
@@ -105,8 +101,18 @@ export const table = (n) => {
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
 export const multiplesJusqua = (n, limite) => {
-  // à compléter
-};
+   let multiples =[];
+   let i=1; 
+   while ((i*n)<=limite) {
+    multiples.push(i*n);
+    i++;
+    }
+   return multiples;
+  }
+
+
+
+
 
 /**
  * [FACULTATIF]
@@ -119,7 +125,7 @@ export const multiplesJusqua = (n, limite) => {
  * @example puissance(5, 0)  → 1
  */
 export const puissance = (base, exposant) => {
-  // à compléter
+  
 };
 
 /**

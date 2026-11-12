@@ -1,7 +1,7 @@
  * Affiche les nombres de 1 à n dans la console.
 VARIABLES
-  n : ENTIER
-  i : ENTIER
+  n, i : ENTIER
+
 DEBUT
   LIRE n
   POUR i DE 1 À n FAIRE
@@ -14,9 +14,7 @@ FIN
  * Affiche uniquement les nombres pairs de 1 à n dans la console.
 VARIABLES
 
-  i : ENTIER
-  n : ENTIER
-  
+  i, n : ENTIER
 DEBUT
   LIRE n
   i ← 1
@@ -30,11 +28,7 @@ FIN
 
 * Retourne la somme de tous les entiers de 1 à n.
 VARIABLES
-
-i : ENTIER
-n : ENTIER
-total : ENTIER
-
+i, n, total : ENTIER
 
 DEBUT
   LIRE n
@@ -48,10 +42,7 @@ FIN
 * Retourne le produit de tous les entiers de 1 à n (factorielle).
 
 VARIABLES
-
-i : ENTIER
-n : ENTIER
-total : ENTIER
+i,n, total: ENTIER
 
 DEBUT
   LIRE n
@@ -66,10 +57,8 @@ FIN
 
  * Retourne le nombre d'entiers pairs entre 1 et n inclus.
 
- VARIABLES
-
-i : ENTIER
-n : ENTIER
+VARIABLES
+i,n  : ENTIER
 total : ENTIER
 
 DEBUT
@@ -89,10 +78,8 @@ FIN
  * Retourne un tableau contenant les n premiers multiples de n. 
 
 VARIABLES
-i : ENTIER
-n : ENTIER
-multiples :[]
-
+i,n : ENTIER
+multiples :TABLEAU
 
 DEBUT
 LIRE n
@@ -108,7 +95,26 @@ AFFICHER multiples
 FIN
 
 
+* Retourne un tableau contenant tous les multiples de n inférieurs ou égaux à limite.
 
+VARIABLES
+i,n, limite : ENTIER
+multiples :TABLEAU
+
+DEBUT
+LIRE n
+LIRE limite
+i <- 1
+multiples <- []
+
+TANT QUE i * n <= limite 
+AJOUTER i *n à multiples
+FIN TANT QUE
+AFFICHER multiples
+
+
+
+FIN
 
 
 
