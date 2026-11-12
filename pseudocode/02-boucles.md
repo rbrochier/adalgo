@@ -107,13 +107,10 @@ LIRE limite
 i <- 1
 multiples <- []
 
-TANT QUE i * n <= limite 
-AJOUTER i *n à multiples
+  TANT QUE i * n <= limite 
+    AJOUTER i *n à multiples
 FIN TANT QUE
-AFFICHER multiples
-
-
-
+  AFFICHER multiples
 FIN
 
 
