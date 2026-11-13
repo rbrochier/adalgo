@@ -68,6 +68,10 @@ for (let i=0; i<tableau.length; i++){
   return false;
 };
 
+
+
+
+
 /**
  * Retourne le nombre de fois que la valeur apparaît dans le tableau.
  * @param {any[]} tableau
@@ -75,8 +79,15 @@ for (let i=0; i<tableau.length; i++){
  * @returns {number}
  * @example compter([1, 2, 2, 3, 2], 2) → 3
  */
-export const compter = (tableau, valeur) => {
-  // à compléter
+  export const compter = (tableau, valeur) => {
+    let compteur = 0;
+    for (let i=0; i<tableau.length; i++){
+      if (valeur === tableau[i]){
+        compteur = compteur + 1
+      } 
+    }
+  return compteur;
+ 
 };
 
 /**

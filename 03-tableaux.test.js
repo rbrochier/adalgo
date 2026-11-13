@@ -6,6 +6,7 @@ import {
   compter,
   inverser,
   sansDoublons,
+ 
 } from "./03-tableaux.js";
 
 // Tu connais maintenant .toBe() et .toEqual().
@@ -88,7 +89,41 @@ describe("contient", () => {
 // Même pattern — à toi.
 // Cas à couvrir : plusieurs occurrences, valeur absente (retourne 0).
 describe("compter", () => {
-  // à compléter
+  it("retourne le nombre de fois ou la valeur apparaît", () => {
+    /// Arrange
+    const tableau = [8, 12, 6, 0, 12, 55, 12];
+    const valeur = 12;
+
+    /// Act
+    const resultat = compter(tableau, valeur);
+
+    /// Assert
+    expect(resultat).toBe(3);
+  });
+});
+
+it("retourne le nombre de fois ou la valeur apparaît", () => {
+  /// Arrange
+  const tableau = [8, 12, 6, 0, 12, 55, 12];
+  const valeur = 12;
+
+  /// Act
+  const resultat = compter(tableau, valeur);
+
+  /// Assert
+  expect(resultat).toBe(3);
+});
+
+it("retourne le nombre de fois ou la valeur apparaît", () => {
+  /// Arrange
+  const tableau = [8, 12, 6, 0, 12, 55, 12];
+  const valeur = 169;
+
+  /// Act
+  const resultat = compter(tableau, valeur);
+
+  /// Assert
+  expect(resultat).toBe(0);
 });
 
 // [FACULTATIF] Nouveau cas : vérifier que le tableau original n'est pas modifié.

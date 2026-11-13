@@ -93,16 +93,22 @@ FIN
 
    RETOURNE false
 FIN
+ 
 
+ * Retourne le nombre de fois que la valeur apparaît dans le tableau.
 
+ VARIABLES
+ i, valeur, compteur : ENTIER
+ tableau : TABLEAU
 
-
-
-
-
-
-
-
-  
-
+DEBUT
+  LIRE valeur
+  LIRE tableau
+  compteur <- 0
+   POUR i <- 0 à longueur tableau -1
+      SI valeur = tableau[i] ALORS
+      compteur <- compteur + 1
+      FIN SI
+   FIN POUR
+   RETOURNE compteur
 FIN
