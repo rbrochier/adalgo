@@ -178,22 +178,20 @@ describe("multiplesJusqua", () => {
     const attendu = [3, 6, 9, 12];
     /// Act
     const resultat = multiplesJusqua(n, limite);
-    
+
     /// Assert
     expect(resultat).toEqual(attendu);
-
   });
   it("retourne les multiples jusqu'à 14 pour n=7", () => {
     /// Arrange
     const n = 7;
     const limite = 20;
-    const attendu = [7,14];
+    const attendu = [7, 14];
     /// Act
     const resultat = multiplesJusqua(n, limite);
-    
+
     /// Assert
     expect(resultat).toEqual(attendu);
-
   });
 });
 

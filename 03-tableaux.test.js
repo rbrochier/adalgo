@@ -6,7 +6,6 @@ import {
   compter,
   inverser,
   sansDoublons,
- 
 } from "./03-tableaux.js";
 
 // Tu connais maintenant .toBe() et .toEqual().

@@ -17,7 +17,6 @@ export const estPositif = (n) => {
 };
 
 /**
- * Retourne true si n est pair.
  * @param {number} n
  * @returns {boolean}
  * @example estPair(4) → true / estPair(7) → false

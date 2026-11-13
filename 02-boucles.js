@@ -68,8 +68,8 @@ export const compterPairs = (n) => {
   let total = 0;
   for (let i = 1; i <= n; i++) {
     if (i % 2 === 0) {
-     total++;
-    } 
+      total++;
+    }
   }
   return total;
 };
@@ -86,8 +86,8 @@ export const compterPairs = (n) => {
 export const table = (n) => {
   let multiples = [];
   for (let i = 1; i <= n; i++) {
-    multiples.push(n*i);
-    } 
+    multiples.push(n * i);
+  }
   return multiples;
 };
 
@@ -101,18 +101,14 @@ export const table = (n) => {
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
 export const multiplesJusqua = (n, limite) => {
-   let multiples =[];
-   let i=1; 
-   while ((i*n)<=limite) {
-    multiples.push(i*n);
+  let multiples = [];
+  let i = 1;
+  while (i * n <= limite) {
+    multiples.push(i * n);
     i++;
-    }
-   return multiples;
   }
-
-
-
-
+  return multiples;
+};
 
 /**
  * [FACULTATIF]
@@ -124,9 +120,7 @@ export const multiplesJusqua = (n, limite) => {
  * @example puissance(2, 10) → 1024
  * @example puissance(5, 0)  → 1
  */
-export const puissance = (base, exposant) => {
-  
-};
+export const puissance = (base, exposant) => {};
 
 /**
  * [FACULTATIF]
