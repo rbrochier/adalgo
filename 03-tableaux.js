@@ -9,14 +9,14 @@
  * @example maximum([3, 7, 2, 9, 1]) → 9
  */
 export const maximum = (tableau) => {
-  let max = tableau[0]
+  let max = tableau[0];
   for (let i = 1; i < tableau.length; i++) {
     if (tableau[i] > max) {
       max = tableau[i];
     }
   }
-  return max
-}
+  return max;
+};
 
 /**
  * Retourne la plus petite valeur d'un tableau de nombres. Sans Math.min().
@@ -25,15 +25,14 @@ export const maximum = (tableau) => {
  * @example minimum([3, 7, 2, 9, 1]) → 1
  */
 export const minimum = (tableau) => {
-   let min = tableau[0]
+  let min = tableau[0];
   for (let i = 1; i < tableau.length; i++) {
     if (tableau[i] < min) {
       min = tableau[i];
     }
-      
   }
-  return min
-}
+  return min;
+};
 
 /**
  * Retourne la moyenne des valeurs. Retourne null si le tableau est vide.
@@ -42,8 +41,14 @@ export const minimum = (tableau) => {
  * @example moyenne([2, 4, 6]) → 4 / moyenne([]) → null
  */
 export const moyenne = (tableau) => {
-  // à compléter
-}
+  if (tableau.length === 0) return null;
+
+  let somme = 0;
+  for (let i = 0; i < tableau.length; i++) {
+    somme = somme + tableau[i];
+  }
+  return somme / tableau.length;
+};
 
 /**
  * Retourne true si la valeur est présente dans le tableau, false sinon.
@@ -55,7 +60,7 @@ export const moyenne = (tableau) => {
  */
 export const contient = (tableau, valeur) => {
   // à compléter
-}
+};
 
 /**
  * Retourne le nombre de fois que la valeur apparaît dans le tableau.
@@ -66,7 +71,7 @@ export const contient = (tableau, valeur) => {
  */
 export const compter = (tableau, valeur) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -78,7 +83,7 @@ export const compter = (tableau, valeur) => {
  */
 export const inverser = (tableau) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -89,4 +94,4 @@ export const inverser = (tableau) => {
  */
 export const sansDoublons = (tableau) => {
   // à compléter
-}
+};
