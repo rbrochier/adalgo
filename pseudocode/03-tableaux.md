@@ -74,6 +74,30 @@ somme <- 0
 FIN
 
 
+ * Retourne true si la valeur est présente dans le tableau, false sinon.
+
+ VARIABLES
+ i : ENTIER
+ valeur : ENTIER
+ tableau : TABLEAU
+
+ DEBUT
+   LIRE valeur
+   LIRE tableau
+      POUR i <- 0 à longueur tableau -1
+         SI
+         valeur = tableau [i] ALORS
+         RETOURNE true
+         FIN SI
+      FIN POUR
+
+   RETOURNE false
+FIN
+
+
+
+
+
 
 
 

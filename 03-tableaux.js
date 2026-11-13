@@ -59,7 +59,13 @@ export const moyenne = (tableau) => {
  * @example contient([1, 2, 3], 2) → true / contient([1, 2, 3], 5) → false
  */
 export const contient = (tableau, valeur) => {
-  // à compléter
+for (let i=0; i<tableau.length; i++){
+  if (valeur === tableau[i]){
+    return true;
+  }
+
+}
+  return false;
 };
 
 /**
