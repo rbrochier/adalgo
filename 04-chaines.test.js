@@ -35,12 +35,34 @@ describe("inverserChaine", () => {
 
 // Cas à couvrir : palindrome, non-palindrome, un seul caractère.
 describe("estPalindrome", () => {
-  it.todo("à compléter");
+  it("returne true si c'est un palindrome", () => {
+    const chaine = "aziza";
+
+    const resultat = estPalindrome(chaine);
+
+    expect(resultat).toBe(true);
+  });
+it("retourne false si ce n'est pas un palindrome", () => {
+  const chaine = "aziz";
+
+  const resultat = estPalindrome(chaine);
+
+  expect(resultat).toBe(false);
+});
+
+it("returne true si c'est un palindrome", () => {
+  const chaine = "a";
+
+  const resultat = estPalindrome(chaine);
+
+  expect(resultat).toBe(true);
 });
 
 // Cas à couvrir : chaîne avec voyelles, chaîne sans voyelle.
 describe("compterVoyelles", () => {
   it.todo("à compléter");
+});
+
 });
 
 // [FACULTATIF] Cas à couvrir : chaîne mixte (boNJOUR → Bonjour), chaîne déjà correcte.
