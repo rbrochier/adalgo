@@ -9,8 +9,15 @@
  * @example inverserChaine("bonjour") → "ruojnob"
  */
 export const inverserChaine = (chaine) => {
-  // à compléter
+  
+  const decouper = chaine.split("");
+  const inverser = decouper.reverse();
+  const recoller = inverser.join("");
+
+  return recoller;
 }
+inverserChaine("bonjour");
+
 
 /**
  * Retourne true si la chaîne se lit de la même façon dans les deux sens.

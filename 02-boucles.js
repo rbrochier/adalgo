@@ -110,6 +110,11 @@ export const multiplesJusqua = (n, limite) => {
   return multiples;
 };
 
+
+ 
+
+
+
 /**
  * [FACULTATIF]
  * Retourne base élevé à la puissance exposant. Sans Math.pow().

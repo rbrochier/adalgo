@@ -212,3 +212,8 @@ describe("estDivisibleParTous", () => {
 describe("fibonacci", () => {
   // à compléter
 });
+
+
+
+/// toEqual = pour les tableaux etles objets
+/// toBe = number, strings et les booleen
