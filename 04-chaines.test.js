@@ -42,28 +42,42 @@ describe("estPalindrome", () => {
 
     expect(resultat).toBe(true);
   });
-it("retourne false si ce n'est pas un palindrome", () => {
-  const chaine = "aziz";
+  it("retourne false si ce n'est pas un palindrome", () => {
+    const chaine = "aziz";
 
-  const resultat = estPalindrome(chaine);
+    const resultat = estPalindrome(chaine);
 
-  expect(resultat).toBe(false);
-});
+    expect(resultat).toBe(false);
+  });
 
-it("returne true si c'est un palindrome", () => {
-  const chaine = "a";
+  it("returne true si c'est un palindrome", () => {
+    const chaine = "a";
 
-  const resultat = estPalindrome(chaine);
+    const resultat = estPalindrome(chaine);
 
-  expect(resultat).toBe(true);
+    expect(resultat).toBe(true);
+  });
 });
 
 // Cas à couvrir : chaîne avec voyelles, chaîne sans voyelle.
 describe("compterVoyelles", () => {
-  it.todo("à compléter");
+  it("retourne le nombre voyelles si il y'en a", () => {
+    const chaine = "bonjour";
+
+    const resultat = compterVoyelles(chaine);
+
+    expect(resultat).toBe(3);
+  });
+
+  it("retourne 0 voyelle si il n'y en a pas", () => {
+    const chaine = "brrrrtvv";
+
+    const resultat = compterVoyelles(chaine);
+
+    expect(resultat).toBe(0);
+  });
 });
 
-});
 
 // [FACULTATIF] Cas à couvrir : chaîne mixte (boNJOUR → Bonjour), chaîne déjà correcte.
 describe("capitaliser", () => {
