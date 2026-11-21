@@ -72,5 +72,42 @@ describe("mention", () => {
 // [FACULTATIF] Même pattern — à toi.
 // Cas à couvrir : multiple de 3, multiple de 5, multiple des deux, autre.
 describe("fizzbuzz", () => {
-  // à compléter
+  it ("retourne FizzBuzz si n est divisible par 3 et 5", () => {
+    const n = 15;
+
+    const resultat = fizzbuzz(n)
+
+    expect(resultat).toBe("FizzBuzz")
+
+  })
+
+
+    it ("retourne Fizz si n est divisible par 3", () => {
+    const n = 12;
+
+    const resultat = fizzbuzz(n)
+
+    expect(resultat).toBe("Fizz")
+
+  })
+
+     it ("retourne Buzz si n est divisible par 5", () => {
+    const n = 25;
+
+    const resultat = fizzbuzz(n)
+
+    expect(resultat).toBe("Buzz")
+
+  })
+
+       it ("retourne n si n n'est divisible ni par 5, ni par 3", () => {
+    const n = 7;
+
+    const resultat = fizzbuzz(n)
+
+    expect(resultat).toBe("7")
+
+  })
+
+
 });

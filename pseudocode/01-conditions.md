@@ -68,3 +68,26 @@ FIN
 
  VARIABLES 
  
+
+ * [FACULTATIF]
+ * Retourne "Fizz" si divisible par 3, "Buzz" par 5,
+ * "FizzBuzz" si les deux, sinon le nombre en string.
+
+ VARIABLES
+ n : ENTIER
+
+ DEBUT
+ LIRE n 
+    SI n MOD 3 == 0 && n MOD 5 == 0 ALORS
+        RETOURNE "FizzBuzz"
+    SINON SI n MOD 3 ==0 ALORS
+        RETOURNE "Fizz"
+    SINON SI n MOD 5 == 0 ALORS
+        RETOURNE "Buzz"
+    SINON 
+        RETOURNE n
+    FIN SI
+
+FIN
+
+
