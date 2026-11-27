@@ -4,9 +4,18 @@ import { fullName, filtrerParAge, trierParNom, grouperParVille, statistiques, pr
 // Utilise .toBe() pour une string, .toEqual() pour un objet ou un tableau.
 // Plus d'indications sur les cas — choisis toi-même ce qui est pertinent à tester.
 
+
 describe("fullName", () => {
-  it.todo("à compléter")
-})
+  it("retourne le prénom et le nom de la personne", () => {
+    const personne = { prenom: "Richard", nom: "Brochier" };
+    const resultat = fullName(personne);
+    expect(resultat).toBe("Richard Brochier");
+  });
+
+});
+
+
+
 
 describe("filtrerParAge", () => {
   it.todo("à compléter")

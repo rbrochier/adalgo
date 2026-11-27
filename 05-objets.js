@@ -8,9 +8,14 @@
  * @returns {string}
  * @example fullName({ prenom: "Ada", nom: "Lovelace" }) → "Ada Lovelace"
  */
+
 export const fullName = (personne) => {
-  // à compléter
-}
+  return `${personne.prenom} ${personne.nom}`;
+};
+
+console.log(fullName({ prenom: "Ada", nom: "Lovelace" }));  
+
+
 
 /**
  * Reçoit un tableau de { nom, age } et retourne ceux dont l'âge est >= ageMin.
