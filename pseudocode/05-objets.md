@@ -35,3 +35,28 @@ DEBUT
 
         FIN SI
 FIN
+
+ * Reçoit un tableau de { nom, ... } et retourne le tableau trié par ordre alphabétique du nom.
+
+
+
+VARIABLES
+  personnes : TABLEAU
+  copie : TABLEAU
+
+DEBUT
+  copie ← copie de personnes
+
+  TRIER copie EN COMPARANT les personnes deux à deux :
+
+    pour deux personnes a et b,
+
+    SI nom de a < nom de b ALORS a passe avant b
+
+    SINON SI nom de a > nom de b ALORS b passe avant a
+
+    SINON leur ordre ne change pas
+
+  RETOURNER copie
+  
+FIN

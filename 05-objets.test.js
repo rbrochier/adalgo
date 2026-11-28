@@ -40,7 +40,13 @@ describe("filtrerParAge", () => {
 
 
 describe("trierParNom", () => {
-  it.todo("à compléter")
+  it("retourne le tableau trié par ordre alphabetique", ()=> {
+    const personnes = ([{ nom: "Turing" }, { nom: "Lovelace" }, { nom: "Hopper" }]);
+    const resultat = trierParNom(personnes);
+    expect(resultat).toEqual([{ nom: "Hopper" }, { nom: "Lovelace" }, { nom: "Turing" }]);
+
+})
+
 })
 
 // [FACULTATIF]

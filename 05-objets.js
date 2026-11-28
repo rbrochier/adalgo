@@ -41,8 +41,21 @@ export const filtrerParAge = (personnes, ageMin) => {
  * @example trierParNom([{ nom: "Turing" }, { nom: "Lovelace" }, { nom: "Hopper" }])
  *          → [{ nom: "Hopper" }, { nom: "Lovelace" }, { nom: "Turing" }]
  */
-export const trierParNom = (personnes) => {
-  // à compléter
+
+  export const trierParNom = (personnes) => { 
+
+  const copie = personnes.slice();
+  copie.sort((a, b) => {
+    if (a.nom < b.nom) {
+      return -1;
+    }
+    if (a.nom > b.nom) {
+      return 1;
+    }
+    return 0;
+  });
+
+  return copie;
 };
 
 /**
