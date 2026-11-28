@@ -18,8 +18,26 @@ describe("fullName", () => {
 
 
 describe("filtrerParAge", () => {
-  it.todo("à compléter")
-})
+  it("retourne la personne dont l'age est supérieur à 18 ans", () => {
+    const personnes = [{ nom: "Ada", age: 28 }, { nom: "Alan", age: 17 }];
+    const resultat = filtrerParAge(personnes, 18);
+    expect(resultat).toEqual([{ nom: "Ada", age: 28 }]);
+  })
+
+    it("retourne personne n'a plus de 18 ans", () => {
+    const personnes = [{ nom: "Ada", age: 17 }, { nom: "Alan", age: 16 }];
+    const resultat = filtrerParAge(personnes, 18);
+    expect(resultat).toEqual([]);
+  })
+
+    it("retourne la personne qui a pile 18 ans", () => {
+    const personnes = [{ nom: "Ada", age: 18 }, { nom: "Alan", age: 16 }];
+    const resultat = filtrerParAge(personnes, 18);
+    expect(resultat).toEqual([{ nom: "Ada", age: 18 }]);
+  })
+
+});
+
 
 describe("trierParNom", () => {
   it.todo("à compléter")

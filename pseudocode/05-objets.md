@@ -17,3 +17,21 @@ RETOURNE
 FIN    
 
 
+* Reçoit un tableau de { nom, age } et retourne ceux dont l'âge est >= ageMin.
+
+VARIABLES
+personnes, personne, resultat: TABLEAU
+age, ageMin: ENTIER
+nom: CHAINE
+
+
+
+DEBUT
+    LIRE personnes, ageMin
+    resultat <- TABLEAU vide
+        SI age de personne >= ageMin ALORS
+        ajouter personne à resultat
+    RETOURNE resultat
+
+        FIN SI
+FIN

@@ -13,9 +13,7 @@ export const fullName = (personne) => {
   return `${personne.prenom} ${personne.nom}`;
 };
 
-console.log(fullName({ prenom: "Ada", nom: "Lovelace" }));  
-
-
+console.log(fullName({ prenom: "Ada", nom: "Lovelace" }));
 
 /**
  * Reçoit un tableau de { nom, age } et retourne ceux dont l'âge est >= ageMin.
@@ -26,8 +24,15 @@ console.log(fullName({ prenom: "Ada", nom: "Lovelace" }));
  *          → [{ nom: "Ada", age: 28 }]
  */
 export const filtrerParAge = (personnes, ageMin) => {
-  // à compléter
-}
+  const resultat = [];
+
+  for (let personne of personnes) {
+    if (personne.age >= ageMin) {
+      resultat.push(personne);
+    }
+  }
+  return resultat;
+};
 
 /**
  * Reçoit un tableau de { nom, ... } et retourne le tableau trié par ordre alphabétique du nom.
@@ -38,7 +43,7 @@ export const filtrerParAge = (personnes, ageMin) => {
  */
 export const trierParNom = (personnes) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -55,7 +60,7 @@ export const trierParNom = (personnes) => {
  */
 export const grouperParVille = (personnes) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -68,7 +73,7 @@ export const grouperParVille = (personnes) => {
  */
 export const statistiques = (notes) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -79,7 +84,7 @@ export const statistiques = (notes) => {
  */
 export const prixTotal = (cadeaux) => {
   // à compléter
-}
+};
 
 /**
  * [FACULTATIF]
@@ -90,4 +95,4 @@ export const prixTotal = (cadeaux) => {
  */
 export const plusCher = (cadeaux) => {
   // à compléter
-}
+};
